@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Kwon Hee Ju Final Article</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("button1").click(function(){
+				$("#div1").fadeIn(1000);
+				$("#div2").fadeIn(1500);
+				$("#div3").fadeIn(3000);
+				$("#div4").fadeIn(3500);
+			});
+		});
+	</script>
+	
+	<style>
+		@media all and (min-width: 480px) and (max-width: 740px) {
+			h1 {
+				font-size: 70px;
+				padding: 1px;
+			}
+			h2 {
+				font-size: 13px;
+				padding: 1px;
+			}
+			body {
+				font-size: 13px;
+			}
+			#wrapper {
+				margin: 0px;
+			}
+			div {
+				width: 100%;
+			}
+			p {
+				width: 100%;
+			}
+		}
+		@media all and (max-width: 740px) {
+			.left-col {
+				width: 100%;
+			}
+			.sidebar {
+				width: 100%;
+			}
+		}
+		var {
+			background: transparent;
+			border: 0 none;
+			font-size: 100%;
+			margin: 0;
+			padding: 0;
+			vertical-align: baseline;
+		}
+		::-moz-selection {
+			background-color: #91D8f7;
+			color: #fff;
+		}
+		::selection {
+			background-color: #91D8f7;
+			color: #fff;
+		}
+		a {
+			outline: 0;
+			color: #222;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		p a:hover {
+			color: #27B3CF;
+		}
+		a:active {
+			outline: none;
+			position: relative;
+			top: 2px;
+		}
+		.clearfix {
+			clear: both;
+		}
+		body { 
+			background: #F9F9F9;
+			color: #222;
+			font-family: fantasy;
+			font-size: 16px;
+			-webkit-transition-property: font-size;
+			-moz-transition-property: font-size;
+			transition-property: font-size;
+			-webkit-transition-duration: 0.5s, 0.5s;
+			-moz-transition-duration: 0.5s, 0.5s;
+			transition-duration: 0.5s, 0.5s;
+			-webkit-transition-timing function: linear, ease-in;
+			-moz-transition-timing function: linear, ease-in;
+			transition-timing function: linear, ease-in;
+		}
+		#wrapper {
+			margin: 10px auto;
+			max-width: 980px;
+			width: 90%;
+			background: #fff;
+			padding: 10px 0;
+		}
+		header {
+			padding: 3px;
+		}
+		h1 {
+			font-size: 90px;
+			font-family: 'Droid Serif', serif;
+			line-height: 75px;
+			padding: 10px;
+			text-align: center;
+			-webkit-transition-property: font-size;
+			-moz-transition-property: font-size;
+			transition-property: font-size;
+			-webkit-transition-duration: 0.5s, 0.5s;
+			-moz-transition-duration: 0.5s, 0.5s;
+			transition-duration: 0.5s, 0.5s;
+			-webkit-transition-timing function: linear, ease-in;
+			-moz-transition-timing function: linear, ease-in;
+			transition-timing function: linear, ease-in;
+		}
+
+		h1 a:hover {
+			text-decoration: none;
+			color: #27B3CF;
+		}
+		h2 {
+			font-family: 'Helvetica';
+			font-size: 18px;
+			padding: 10px; 
+			-webkit-transition-property: font-size;
+			-moz-transition-property: font-size;
+			transition-property: font-size;
+			-webkit-transition-duration: 0.5s, 0.5s;
+			-moz-transition-duration: 0.5s, 0.5s;
+			transition-duration: 0.5s, 0.5s; 
+			-webkit-transition-timing function: linear, ease-in;
+			-moz-transition-timing function: linear, ease-in; 
+			transition-timing function: linear, ease-in;
+		}
+		h3 {
+			font-family: 'Droid Serif', serif;
+			font-size: 30px;
+		}
+		h4 {
+			font-family: 'Droid Serif', serif;
+			padding: 3px;
+			margin: 5px 0 0 0; }
+		h4 a {
+			text-decoration: underline;
+		}
+		h4 a:hover {  }
+		nav {
+			background: #222;
+			padding: 0;
+		}
+		nav a {
+			color: #F9F9F9;
+			display: block;
+			float: left;
+			padding: 10px;
+		}
+		nav a:visited {
+			color: #f9f9f9;
+		}
+		nav a:hover {
+			text-decoration: none;
+			background: #27B3CF;
+		}
+		nav a:active {
+			position: relative;
+			top: 0;
+		}
+		.left-col {
+			width: 50%;
+			float: left;
+		}
+		.sidebar {
+			width: 30%;
+			float: right;
+			margin-bottom: 10px; 
+			-webkit-transition-property: width;
+			-moz-transition-property: width;
+			transition-property: width;
+			-webkit-transition-duration: 0.5s, 0.5s;
+			-moz-transition-duration: 0.5s, 0.5s;
+			transition-duration: 0.5s, 0.5s; 
+			-webkit-transition-timing function: linear, ease-in;
+			-moz-transition-timing function: linear, ease-in; 
+			transition-timing function: linear, ease-in;
+		}
+		#featured {
+			padding: 20px;
+		}
+		#latest {
+			padding: 20px;
+		}
+		#schedule{
+			padding: 20px;
+		}
+		#end {
+			padding: 20px;
+		}
+		p {
+			padding: 0 5px 0 5px;
+		}
+		ul {
+			list-style: none;
+		}
+		ul li {
+			margin: 0 5px;
+		}
+		footer 	{
+			padding: 5px;
+		}
+		pre	{
+			overflow: scroll; font-size: 10px;
+		}
+
+		td, th {
+			font-family: monospace;
+			padding: 4px;
+			background-color: #ccc;
+		}
+		#hoge {
+			border: 1px dotted blue;
+			padding: 6px;
+			background-color: #ccc;
+			margin-right: 0%;
+		}
+		#items_table {
+			border: 1px dotted blue;
+			padding: 6px;
+			margin-top: 12px;
+			margin-right: 50%;
+		}
+		#items_table h2 {
+			font-size: 18px;
+			margin-top: 0px;
+			font-family: sans-serif;
+		}
+		label {
+			vertical-align: top;
+		}
+
+		* {box-sizing:border-box}
+
+		.slideshow-container {
+  			max-width: 1000px;
+  			position: relative;
+  			margin: auto;
+		}
+
+		.mySlides {
+  			display: none;
+		}
+
+		.text {
+  			color: #f2f2f2;
+  			font-size: 15px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			bottom: 8px;
+  			width: 100%;
+  			text-align: center;
+		}
+
+		.numbertext {
+	  		color: #f2f2f2;
+  			font-size: 12px;
+  			padding: 8px 12px;
+	  		position: absolute;
+  			top: 0;
+		}
+
+		.dot {
+  			cursor: pointer;
+  			height: 15px;
+  			width: 15px;
+  			margin: 0 2px;
+  			background-color: #bbb;
+  			border-radius: 50%;
+  			display: inline-block;
+  			transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+  			background-color: #717171;
+		}
+
+		.fade {
+  			-webkit-animation-name: fade;
+  			-webkit-animation-duration: 1.5s;
+  			animation-name: fade;
+  			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+  			from {opacity: .4}
+  			to {opacity: 1}
+		}
+
+		@keyframes fade {
+  			from {opacity: .4}
+  			to {opacity: 1}
+		}
+
+	</style>
+</head>
+
+<body id="home">
+	<div id="wrapper">
+		<header>
+			<h1>
+				<a id="Disney" style="font-family: fantasy;">Disney</a></h1>
+			<nav>
+				<a href="#Disney" style="font-family: fantasy;">Home</a>
+				<a href="#Princess" style="font-family: fantasy;">Princess</a>
+				<a href="#Mickey" style="font-family: fantasy;">Mickey Mouse</a>
+				<a href="#Marvel" style="font-family: fantasy;">Marvel</a>
+				<a href="#Landmark" style="font-family: fantasy;">Landmark</a>
+				<a href="#Youtube" style="font-family: fantasy;">Youtube</a>
+				<div class="clearfix"></div>
+			</nav>
+			<img src="image/castle.png" width="100%" style=""><br/><br/>
+		</header>
+		<section id="Princess">
+			<div id="featured" >
+				<h3 style="text-align: center; font-family: fantasy; color:#ff66d9;">Princess</h3>
+				<p style="font-size: 12px; text-align: center; color:#ff66d9;">디즈니의 대표적인 미디어 프랜차이즈인 디즈니 프린세스<br/>디즈니에서 뿐만 아니라 전세계적으로도 총 수입 최상위권에 들 정도로 괴물컨텐츠 중 하나<br/></p>
+				<img src="image/princess.png" width="80%" style=" display: block; margin: 0px auto; "><br/><br/>
+				<p style="font-size: 12px; text-align: center; color:#ff66d9;">겨울왕국과 모아나 상영 이전에 만들어진 대표 이미지.<br/><br/>
+
+				<div class="slideshow-container">
+  					<div class="mySlides fade" style="text-align: center;">
+    				<div class="numbertext">1 / 4</div>
+    				<img src="image/princess1.jpg" style="width: 50%;">
+  				</div>
+
+  				<div class="mySlides fade" style="text-align: center;">
+    				<div class="numbertext">2 / 4</div>
+    				<img src="image/princess2.jpg" style="width: 50%;">
+  				</div>
+
+  				<div class="mySlides fade" style="text-align: center;">
+    				<div class="numbertext">3 / 4</div>
+    				<img src="image/princess3.jpg" style="width: 50%;">
+  				</div>
+
+  				<div class="mySlides fade" style="text-align: center;">
+    				<div class="numbertext">4 / 4</div>
+    				<img src="image/princess4.jpg" style="width: 50%;">
+  				</div>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+  					<span class="dot" onclick="currentSlide(1)"></span>
+  					<span class="dot" onclick="currentSlide(2)"></span>
+  					<span class="dot" onclick="currentSlide(3)"></span>
+  					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+
+				<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+  						showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+  						showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+  						var i;
+  						var slides = document.getElementsByClassName("mySlides");
+  						var dots = document.getElementsByClassName("dot");
+  						if (n > slides.length) {slideIndex = 1}
+  						if (n < 1) {slideIndex = slides.length}
+  						for (i = 0; i < slides.length; i++) {
+      						slides[i].style.display = "none";
+  						}
+  						for (i = 0; i < dots.length; i++) {
+      						dots[i].className = dots[i].className.replace(" active", "");
+  						}
+  						slides[slideIndex-1].style.display = "block";
+  						dots[slideIndex-1].className += " active";
+					}
+				</script>
+
+				<a href="https://namu.wiki/w/%EB%94%94%EC%A6%88%EB%8B%88%20%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4" style="color: #ff66d9;"><br/><br/>More Detail &rarr;</a></p>
+			</div>
+			<hr/>
+
+
+			<div id="Mickey">
+				<section class="left-col">
+					<h3 style="font-family: fantasy; text-align: center; color: red">Mickey Mouse</h3>
+					<a href="#latest"><button1><img src="image/mickeyface.jpg" width="50px" height="50px"></button1></a> Cilck Mickey !<br/><br/>
+					<h4 id="div1" style="color: orange; display:none; font-family: fantasy;">Information</a></h4>
+					<p id="div2" style="display:none;">미키 마우스(Mickey Mouse)는 수컷 쥐를 의인화한 캐릭터이다. 디즈니 애니메이션이나 각종 미디어 믹스에 등장하는 월트 디즈니 컴퍼니의 심볼 캐릭터이다.<br/> 2018년 11월 28일 현재는 90년만에 처음으로 한국에 첫내한을 했다.<br/> 한국에도 디즈니 캐릭터 중에서 많은 팬이 존재한다.<br/> &nbsp;
+						<a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%ED%82%A4_%EB%A7%88%EC%9A%B0%EC%8A%A4" style="color: orange;"><br/>More Detail Info &rarr;</a><br/><br/><br/></p>
+
+					<h4 id="div3" style="color: orange; display:none; font-family: fantasy;">Picture</a></h4>
+					<p id="div4" style="display:none;">
+    					<img src="image/mickeymini.png" style="width: 100%;">
+						<br/> &nbsp;</p>
+					</section>
+
+					<aside class="sidebar" id="aside">
+					<h4 style="font-family: fantasy;">Instagram</a></h4>
+					<ul>
+						<li><a href="https://www.instagram.com/disney/" style="color: purple;"><img src="image/insta.png" width="15px" height="15px"> Disney</a></li>
+						<li><a href="https://www.instagram.com/disneykorea/" style="color: purple;"><img src="image/insta.png" width="15px" height="15px"> Disney_Korea</a></li>
+						<li><a href="https://www.instagram.com/mickeymouse/" style="color: purple;"><img src="image/insta.png" width="15px" height="15px"> Mickey Mouse</a></li>
+					</ul>
+					<br/>
+					<h4 style="font-family: fantasy;">Official Channel</a></h4>
+					<ul>
+						<li><a href="https://www.facebook.com/disney"><img src="image/facebook.png" width="15px" height="15px"> Facebook</a></li>
+						<li><a href="https://www.youtube.com/disney"><img src="image/youtube.png" width="15px" height="15px"> Youtube</a></li>
+						<li><a href="https://www.instagram.com/disney/"><img src="image/insta.png" width="15px" height="15px"> Instagram</a></li>
+						<li><a href="https://twitter.com/disney"><img src="image/twitter.png" width="15px" height="15px"> Twitter</a></li>
+					</ul>
+					<br/>	
+				</aside>
+			</div>
+			<div class="clearfix"></div>
+			<hr/>
+			<div id="Marvel">
+				<h3 style="font-family: fantasy; text-align: center; color: #000066;"><img src="image/logo.png" width="25px" height="25px" style="margin-right: 10px">Marvel<img src="image/logo.png" width="25px" height="25px" style="margin-left: 10px"></h3>
+				<p style="font-size: 12px; text-align: center; color: #000066;">캘리포니아 버뱅크에 위치한 월트 디즈니 스튜디오의 자회사<br/></p>
+				<h4 style="color: black; font-family: fantasy; font-size: 25px ">1. IRON MAN</a></h4>
+				<img src="image/ironman.png" width="100%" style="max-height: 300px"><p>Type: SF, Action, Drama, Fantasy &nbsp;<br/>
+					Date : 2008. 04. 30<br/></p>
+				<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=44885" style="color:#000066;"><br/><br/>More Detail &rarr;</a></p>
+				<h4 style="color: black; font-family: fantasy; font-size: 25px">2. CAPTAIN AMERICA</a></h4>
+				<img src="image/captain.png" width="100%"><p>Type: Action, Adventure &nbsp;<br/>
+					Date : 2011. 07. 28<br/></p>
+				<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=76348" style="color:#000066;"><br/><br/>More Detail &rarr;</a></p>
+				<h4 style="color: black; font-family: fantasy; font-size: 25px">3. AVENGERS</a></h4>
+				<img src="image/avengers.png" width="100%"><p>Type: Action, SF, Adventure &nbsp;<br/>
+					Date : 2012. 04. 26<br/></p>
+				<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136900" style="color:#000066;"><br/><br/>More Detail &rarr;</a></p>
+			</div>
+		</section>	
+		<hr/>
+		<section id="Landmark">
+			<h2 style="font-family: fantasy; text-align: center; color: green; font-size: 50px">LandMark</h2>
+			<p style="font-size: 12px; text-align: center; color: green;">월트 디즈니가 세운 대규모 오락시설 (놀이공원)<br/>미국에 제일 먼저 개장했으며 더 많은 관광객을 위해 파리, 도쿄 등에도 개장함<br/></p>
+			<div style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.027995859396!2d-117.92035995464096!3d33.811590604618544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7d12b3b5e6b%3A0x2ef62f8418225cfa!2z65SU7KaI64uI656c65OcIO2MjO2BrA!5e0!3m2!1sko!2skr!4v1592729135055!5m2!1sko!2skr" width="90%" height="400px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+		</section>
+		<hr/>
+
+		<section id="Youtube">
+			<h2 style="font-family: fantasy; text-align: center; color: blue; font-size: 50px">YOUTUBE</h2>
+			<p style="font-size: 12px; text-align: center; color: blue;">디즈니에서 운영하는 공식 유튜브 채널<br/>디즈니 영화에 나오는 캐릭터들이 다양한 주제를 가지고 재밌는 영상들을 업로드함<br/></p>
+			<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/SKSUEBOTGJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		</section>
+		<hr/>
+
+		<footer id="end" onload="doShowAll()">
+			<h1 style="text-align: left; font-size: 40px; font-family: initial;"><img src="image/kwonhxxjj.jpg" style="width: 100px; height: 120px; position: left; margin-right: 15px"> Writer Info</h1>
+			<p style="font-family: inherit;">&copy; 18129516 Kwon Hee Ju<br/>&copy; Standard. 2020. 06. 21. 18:00</p>
+		</footer>		
+	</div>
+
+
+</body>
+</html>
